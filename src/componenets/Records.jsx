@@ -21,7 +21,7 @@ const Records = () => {
           return (
             <div
               key={item._id}
-              className="flex relative sm:flex-col flex-wrap gap-1 p-4 justify-start my-2 sm:w-96 sm:h-34  rounded bg-gray-100 shadow-xl"
+              className="flex relative flex-col  gap-1 p-4 justify-start my-2 w-96 h-34  rounded bg-gray-100 shadow-xl"
             >
               <h1 className="font-bold text-xl text-green-700 ">
                 Exercise: {item.title}

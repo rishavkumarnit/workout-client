@@ -200,11 +200,17 @@
   .flex {
     display: flex;
   }
+  .h-34 {
+    height: calc(var(--spacing) * 34);
+  }
   .h-\[70\%\] {
     height: 70%;
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-96 {
+    width: calc(var(--spacing) * 96);
   }
   .w-\[30\%\] {
     width: 30%;
@@ -361,16 +367,6 @@
   .sm\:left-auto {
     @media (width >= 40rem) {
       left: auto;
-    }
-  }
-  .sm\:h-34 {
-    @media (width >= 40rem) {
-      height: calc(var(--spacing) * 34);
-    }
-  }
-  .sm\:w-96 {
-    @media (width >= 40rem) {
-      width: calc(var(--spacing) * 96);
     }
   }
   .sm\:w-full {
