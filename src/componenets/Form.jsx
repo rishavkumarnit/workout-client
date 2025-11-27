@@ -27,11 +27,15 @@ const Form = () => {
       return;
     }
 
-    await axios.post("https://workout-server-ptc4.onrender.com/api/workouts/", form, {
-      headers: {
-        Authorization: `Bearer ${user.token}`,
-      },
-    });
+    await axios.post(
+      "https://workout-server-ptc4.onrender.com/api/workouts/",
+      form,
+      {
+        headers: {
+          Authorization: `Bearer ${user.token}`,
+        },
+      }
+    );
     getWorkouts();
     setForm({ title: "", reps: "", load: "" });
   };
@@ -68,7 +72,7 @@ const Form = () => {
     <div className="bg-gray-100 w-[30%] h-[70%] shadow-xl rounded mt-2  text-[100%]">
       {!updateForm._id && (
         <form
-          className="flex flex-wrap sm:flex-col gap-4 justify-start p-2"
+          className="flex flex-col gap-4 justify-start rounded p-2"
           onSubmit={createWorkout}
         >
           <h1 className="font-bold sm:text-2xl text-xl text-red-400">
