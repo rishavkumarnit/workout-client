@@ -179,11 +179,11 @@
   .relative {
     position: relative;
   }
-  .bottom-2 {
-    bottom: calc(var(--spacing) * 2);
+  .top-2 {
+    top: calc(var(--spacing) * 2);
   }
-  .left-2 {
-    left: calc(var(--spacing) * 2);
+  .right-2 {
+    right: calc(var(--spacing) * 2);
   }
   .m-1 {
     margin: calc(var(--spacing) * 1);
@@ -347,26 +347,6 @@
       --tw-scale-y: 90%;
       --tw-scale-z: 90%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-  }
-  .sm\:top-2 {
-    @media (width >= 40rem) {
-      top: calc(var(--spacing) * 2);
-    }
-  }
-  .sm\:right-2 {
-    @media (width >= 40rem) {
-      right: calc(var(--spacing) * 2);
-    }
-  }
-  .sm\:bottom-auto {
-    @media (width >= 40rem) {
-      bottom: auto;
-    }
-  }
-  .sm\:left-auto {
-    @media (width >= 40rem) {
-      left: auto;
     }
   }
   .sm\:w-full {

@@ -29,17 +29,17 @@ const Records = () => {
               <p>Reps: {item.reps}</p>
               <p>Load(Kg): {item.load}</p>
               <div
-                className="mt-2 flex gap-2 absolute bottom-2 left-2 sm:top-2 sm:right-2 sm:bottom-auto sm:left-auto"
+                className="mt-2 flex gap-2 absolute top-2 right-2"
               >
                 <button
-                  className=" active:scale-90 active:translate-z-1 hover:cursor-pointer bg-gray-400 rounded p-1"
+                  className="active:scale-90 active:translate-z-1 hover:cursor-pointer bg-gray-400 rounded p-1"
                   onClick={() => toggleUpdate(item)}
                 >
                   Edit
                 </button>
 
                 <button
-                  className=" active:scale-90 active:translate-z-1 hover:cursor-pointer bg-gray-400 rounded p-1"
+                  className="active:scale-90 active:translate-z-1 hover:cursor-pointer bg-gray-400 rounded p-1"
                   onClick={() => deleteWorkout(item._id)}
                 >
                   Delete
