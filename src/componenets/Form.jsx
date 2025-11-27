@@ -65,7 +65,7 @@ const Form = () => {
   };
 
   return (
-    <div className="bg-gray-100 sm:w-[30%] sm:h-[70%] shadow-xl rounded mt-2 text-[50%] sm:text-[100%]">
+    <div className="bg-gray-100 w-[30%] h-[70%] shadow-xl rounded mt-2  text-[100%]">
       {!updateForm._id && (
         <form
           className="flex flex-wrap sm:flex-col gap-4 justify-start p-2"
