@@ -5,12 +5,17 @@ const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setpassword] = useState("");
   const { signUp, error } = useSignup();
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!emailRegex.test(email)) {
+      alert("Enter a valid email");
+      return;
+    }
     await signUp(email, password);
-        setEmail("");
-    setpassword("")
+    setEmail("");
+    setpassword("");
   };
 
   return (
@@ -39,9 +44,10 @@ const Signup = () => {
             ></input>
           </div>
         </form>
-        <button 
-        onClick={(e)=>handleSubmit(e)}
-        className=" active:scale-90 active:translate-z-1 hover:cursor-pointer p-1 bg-gray-400 rounded">
+        <button
+          onClick={(e) => handleSubmit(e)}
+          className=" active:scale-90 active:translate-z-1 hover:cursor-pointer p-1 bg-gray-400 rounded"
+        >
           Submit
         </button>
         {error && <p>{error}</p>}
