@@ -7,7 +7,6 @@ Users can **create, read, update, and delete workout records** securely with **J
 
 ## 🚀 Live Demo
 🔗 **Client Website:** https://workout-client-sandy.vercel.app/  
-🔗 **Backend API:** https://workout-server-ptc4.onrender.com
 
 ---
 
